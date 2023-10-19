@@ -12,12 +12,12 @@ function App() {
       element: <RootLayout />,
       errorElement: <ErrorPage />,
       children: [
-        { path: "/", element: <Home /> },
+        { path: "", element: <Home /> },
         {
-          path: "/products",
+          path: "products",
           element: <Products />,
         },
-        { path: "/products/:productId", element: <ProductDetailPage /> }, //Dynamic Routing ':productId'
+        { path: "products/:productId", element: <ProductDetailPage /> }, //Dynamic Routing ':productId'
       ],
     },
   ]);

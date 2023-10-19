@@ -12,7 +12,7 @@ const MainNavigation = (props) => {
                 isActive ? classes.active : undefined
               }
               // style={({ isActive }) => ({ color: isActive ? "red" : "blue" })}
-              to="/products"
+              to="products"
             >
               Products Page
             </NavLink>
@@ -22,7 +22,7 @@ const MainNavigation = (props) => {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              to="/"
+              to=""
               end
             >
               Home Page
