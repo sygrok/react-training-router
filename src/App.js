@@ -12,7 +12,8 @@ function App() {
       element: <RootLayout />,
       errorElement: <ErrorPage />,
       children: [
-        { path: "", element: <Home /> },
+        { index: true, element: <Home /> }, // // index lets us to use parent's path as a value
+        // { path: "", element: <Home /> }
         {
           path: "products",
           element: <Products />,
